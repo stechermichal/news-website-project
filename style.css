@@ -74,6 +74,18 @@ h2 {
     font-style: italic;
 }
 
+h3 {
+    padding-left: 200px;
+}
+
+h4 {
+    width: 100%;
+    text-align: center;
+    border-bottom: 1px solid darkgray;
+    line-height: 0.1em;
+    margin: 10px 0 20px;
+}
+
 .pictures {
     display: block;
     float: right;
@@ -81,4 +93,27 @@ h2 {
     width: 250px;
     height: 250px;
 
+}
+
+.description {
+    text-align: right;
+    font-size: 15px;
+    font-style: italic;
+    padding-right: 350px;
+}
+
+table, th, td {
+    padding: 5px;
+}
+
+footer {
+    display: table;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    padding-bottom: 20px;
+}
+
+ul {
+    padding-left: 200px;
 }
