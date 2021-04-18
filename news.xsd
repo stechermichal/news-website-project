@@ -327,6 +327,7 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="8"/> <!-- Custom restriction -->
             <xs:maxLength value="10"/> <!-- Custom restriction -->
+            <xs:whiteSpace value="collapse"/> <!-- Custom restriction -->
             <xs:enumeration value="24.4.2012"/>
             <xs:enumeration value="21.8.2016"/>
             <xs:enumeration value="28.1.2010"/>
