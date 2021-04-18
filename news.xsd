@@ -164,7 +164,7 @@
       </xs:element>
       <xs:element type="contactType" name="contact"/>
     </xs:sequence>
-    <xs:attribute type="xs:byte" name="sid" use="optional"/>
+    <xs:attribute type="xs:ID" name="sid" use="optional"/>
     <xs:attribute type="xs:string" name="lang" use="optional"/>
   </xs:complexType>
   <xs:complexType name="authorType">
@@ -215,7 +215,7 @@
       <xs:element type="educationType" name="education"/>
       <xs:element type="direct_supervisorType" name="direct_supervisor"/>
     </xs:sequence>
-    <xs:attribute type="xs:byte" name="id" use="optional"/>
+    <xs:attribute type="xs:ID" name="id" use="optional"/>
     <xs:attribute type="xs:string" name="lang" use="optional"/>
   </xs:complexType>
   <xs:complexType name="authorsType">
