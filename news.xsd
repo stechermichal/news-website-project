@@ -15,13 +15,6 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="1"/> <!-- Custom restriction -->
             <xs:maxLength value="100"/> <!-- Custom restriction -->
-            <xs:enumeration value="World News, Domestic, Politics"/>
-            <xs:enumeration value="World News, Domestic, Politics, Health"/>
-            <xs:enumeration value="World News, Domestic, Politics, Entertainment"/>
-            <xs:enumeration value="World News, Domestic, Politics, Religion, Science, Health"/>
-            <xs:enumeration value="World News, Domestic, Politics, Business"/>
-            <xs:enumeration value="World News, Domestic, Politics, Science, Health"/>
-            <xs:enumeration value="World News, Domestic, Entertainment"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -30,14 +23,6 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="8"/> <!-- Custom restriction -->
             <xs:maxLength value="10"/> <!-- Custom restriction -->
-            <xs:enumeration value="29.4.2012"/>
-            <xs:enumeration value="31.8.2017"/>
-            <xs:enumeration value="29.12.2012"/>
-            <xs:enumeration value="12.7.2018"/>
-            <xs:enumeration value="29.9.2010"/>
-            <xs:enumeration value="6.4.2018"/>
-            <xs:enumeration value="19.8.2011"/>
-            <xs:enumeration value="29.12.2015"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -46,14 +31,6 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="8"/> <!-- Custom restriction -->
             <xs:maxLength value="10"/> <!-- Custom restriction -->
-            <xs:enumeration value="20.8.2020"/>
-            <xs:enumeration value="21.9.2020"/>
-            <xs:enumeration value="20.1.2021"/>
-            <xs:enumeration value="24.12.2020"/>
-            <xs:enumeration value="1.4.2021"/>
-            <xs:enumeration value="15.1.2021"/>
-            <xs:enumeration value="11.1.2021"/>
-            <xs:enumeration value="24.5.2020"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -62,13 +39,6 @@
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/> <!-- Custom restriction -->
             <xs:maxInclusive value="999"/> <!-- Custom restriction -->
-            <xs:enumeration value="17"/>
-            <xs:enumeration value="27"/>
-            <xs:enumeration value="32"/>
-            <xs:enumeration value="8"/>
-            <xs:enumeration value="53"/>
-            <xs:enumeration value="82"/>
-            <xs:enumeration value="29"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -77,14 +47,6 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="2"/> <!-- Custom restriction -->
             <xs:maxLength value="3"/> <!-- Custom restriction -->
-            <xs:enumeration value="93%"/>
-            <xs:enumeration value="75%"/>
-            <xs:enumeration value="68%"/>
-            <xs:enumeration value="80%"/>
-            <xs:enumeration value="71%"/>
-            <xs:enumeration value="59%"/>
-            <xs:enumeration value="73%"/>
-            <xs:enumeration value="49%"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -93,14 +55,6 @@
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/> <!-- Custom restriction -->
             <xs:maxInclusive value="20000"/> <!-- Custom restriction -->
-            <xs:enumeration value="1259"/>
-            <xs:enumeration value="1849"/>
-            <xs:enumeration value="1487"/>
-            <xs:enumeration value="1001"/>
-            <xs:enumeration value="954"/>
-            <xs:enumeration value="822"/>
-            <xs:enumeration value="595"/>
-            <xs:enumeration value="2248"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -127,14 +81,7 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="1"/> <!-- Custom restriction -->
             <xs:maxLength value="100"/> <!-- Custom restriction -->
-            <xs:enumeration value="https://www.linkedin.com/in/virgiltexas/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/petrkoval/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/williambomb/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/jonathanbrum/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/derekkilljoy/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/alancash/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/arturkorneyev/"/>
-            <xs:enumeration value="https://www.linkedin.com/in/petrbramburek/"/>
+            <xs:pattern value="https?://.+" /> <!-- Custom restriction -->
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -153,12 +100,8 @@
       <xs:element name="country">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Czech Republic"/>
-            <xs:enumeration value="France"/>
-            <xs:enumeration value="Germany"/>
-            <xs:enumeration value="Slovakia"/>
-            <xs:enumeration value="Russian Federation"/>
+            <xs:minLength value="1"/> <!-- Custom restriction -->
+            <xs:maxLength value="40"/> <!-- Custom restriction -->
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -166,11 +109,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Prague"/>
-            <xs:enumeration value="Marseille"/>
-            <xs:enumeration value="Munich"/>
-            <xs:enumeration value="Bratislava"/>
-            <xs:enumeration value="Moscow"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -179,8 +117,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="Masters|Bachelors"/> <!-- Custom restriction -->
-            <xs:enumeration value="Masters"/>
-            <xs:enumeration value="Bachelors"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -189,14 +125,6 @@
           <xs:restriction base="xs:string">
             <xs:minLength value="8"/> <!-- Custom restriction -->
             <xs:maxLength value="10"/> <!-- Custom restriction -->
-            <xs:enumeration value="5.4.2000"/>
-            <xs:enumeration value="4.5.1995"/>
-            <xs:enumeration value="15.4.2010"/>
-            <xs:enumeration value="5.4.1998"/>
-            <xs:enumeration value="4.3.2018"/>
-            <xs:enumeration value="5.6.2011"/>
-            <xs:enumeration value="2.1.1980"/>
-            <xs:enumeration value="15.8.1999"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -209,14 +137,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Alie"/>
-            <xs:enumeration value="Petr"/>
-            <xs:enumeration value="Anna"/>
-            <xs:enumeration value="Kara"/>
-            <xs:enumeration value="Jon"/>
-            <xs:enumeration value="Johnny"/>
-            <xs:enumeration value="Amelia"/>
-            <xs:enumeration value="Glue"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -224,14 +144,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Blue"/>
-            <xs:enumeration value="Klic"/>
-            <xs:enumeration value="Karenina"/>
-            <xs:enumeration value="Mara"/>
-            <xs:enumeration value="Doe"/>
-            <xs:enumeration value="Zhivago"/>
-            <xs:enumeration value="Watson"/>
-            <xs:enumeration value="Lue"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -239,8 +151,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="Male|Female"/> <!-- Custom restriction -->
-            <xs:enumeration value="Female"/>
-            <xs:enumeration value="Male"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -249,14 +159,6 @@
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/> <!-- Custom restriction -->
             <xs:maxInclusive value="125"/> <!-- Custom restriction -->
-            <xs:enumeration value="38"/>
-            <xs:enumeration value="58"/>
-            <xs:enumeration value="42"/>
-            <xs:enumeration value="61"/>
-            <xs:enumeration value="68"/>
-            <xs:enumeration value="25"/>
-            <xs:enumeration value="26"/>
-            <xs:enumeration value="45"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -271,13 +173,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Virgil"/>
-            <xs:enumeration value="Petr"/>
-            <xs:enumeration value="William"/>
-            <xs:enumeration value="Jonathan"/>
-            <xs:enumeration value="Derek"/>
-            <xs:enumeration value="Alan"/>
-            <xs:enumeration value="Artur"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -285,14 +180,6 @@
         <xs:simpleType>
           <xs:restriction base="xs:string">
             <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
-            <xs:enumeration value="Texas"/>
-            <xs:enumeration value="Koval"/>
-            <xs:enumeration value="Bomb"/>
-            <xs:enumeration value="Brum"/>
-            <xs:enumeration value="Killjoy"/>
-            <xs:enumeration value="Cash"/>
-            <xs:enumeration value="Korneyev"/>
-            <xs:enumeration value="Bramburek"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -302,13 +189,6 @@
           <xs:restriction base="xs:integer">
             <xs:minInclusive value="0"/> <!-- Custom restriction -->
             <xs:maxInclusive value="125"/> <!-- Custom restriction -->
-            <xs:enumeration value="39"/>
-            <xs:enumeration value="45"/>
-            <xs:enumeration value="29"/>
-            <xs:enumeration value="48"/>
-            <xs:enumeration value="22"/>
-            <xs:enumeration value="33"/>
-            <xs:enumeration value="65"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
@@ -328,14 +208,6 @@
             <xs:minLength value="8"/> <!-- Custom restriction -->
             <xs:maxLength value="10"/> <!-- Custom restriction -->
             <xs:whiteSpace value="collapse"/> <!-- Custom restriction -->
-            <xs:enumeration value="24.4.2012"/>
-            <xs:enumeration value="21.8.2016"/>
-            <xs:enumeration value="28.1.2010"/>
-            <xs:enumeration value="2.1.2018"/>
-            <xs:enumeration value="1.2.2009"/>
-            <xs:enumeration value="4.6.2017"/>
-            <xs:enumeration value="11.6.2010"/>
-            <xs:enumeration value="11.12.2013"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>

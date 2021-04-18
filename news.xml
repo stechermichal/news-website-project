@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" ?>
-<authors>
+<authors xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="news.xsd">
     <author id="1" lang="en">
         <name>Virgil</name>
         <surname>Texas</surname>
