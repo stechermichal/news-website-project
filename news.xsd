@@ -4,7 +4,7 @@
   <xs:complexType name="salaryType">
     <xs:simpleContent>
       <xs:extension base="xs:int">
-        <xs:attribute type="xs:string" name="currency" use="optional"/>
+        <xs:attribute type="xs:string" name="currency" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -63,7 +63,7 @@
   <xs:complexType name="phone_numberType">
     <xs:simpleContent>
       <xs:extension base="xs:long">
-        <xs:attribute type="xs:string" name="type" use="optional"/>
+        <xs:attribute type="xs:string" name="type" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -86,12 +86,12 @@
         </xs:simpleType>
       </xs:element>
     </xs:choice>
-    <xs:attribute type="xs:string" name="gdpr_opt_out" use="optional"/>
+    <xs:attribute type="xs:string" name="gdpr_opt_out" use="required"/>
   </xs:complexType>
   <xs:complexType name="school_nameType">
     <xs:simpleContent>
       <xs:extension base="xs:string">
-        <xs:attribute type="xs:string" name="type" use="optional"/>
+        <xs:attribute type="xs:string" name="type" use="required"/>
       </xs:extension>
     </xs:simpleContent>
   </xs:complexType>
@@ -129,7 +129,7 @@
         </xs:simpleType>
       </xs:element>
     </xs:sequence>
-    <xs:attribute type="xs:string" name="type" use="optional"/>
+    <xs:attribute type="xs:string" name="type" use="required"/>
   </xs:complexType>
   <xs:complexType name="direct_supervisorType">
     <xs:sequence>
@@ -164,8 +164,8 @@
       </xs:element>
       <xs:element type="contactType" name="contact"/>
     </xs:sequence>
-    <xs:attribute type="xs:ID" name="sid" use="optional"/>
-    <xs:attribute type="xs:string" name="lang" use="optional"/>
+    <xs:attribute type="xs:byte" name="sid" use="required"/>
+    <xs:attribute type="xs:string" name="lang" use="required"/>
   </xs:complexType>
   <xs:complexType name="authorType">
     <xs:sequence>
@@ -215,8 +215,8 @@
       <xs:element type="educationType" name="education"/>
       <xs:element type="direct_supervisorType" name="direct_supervisor"/>
     </xs:sequence>
-    <xs:attribute type="xs:ID" name="id" use="optional"/>
-    <xs:attribute type="xs:string" name="lang" use="optional"/>
+    <xs:attribute type="xs:byte" name="id" use="required"/>
+    <xs:attribute type="xs:string" name="lang" use="required"/>
   </xs:complexType>
   <xs:complexType name="authorsType">
     <xs:sequence>
