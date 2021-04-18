@@ -1,11 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
   <xs:element name="authors" type="authorsType"/>
+  <xs:complexType name="salaryType">
+    <xs:simpleContent>
+      <xs:extension base="xs:int">
+        <xs:attribute type="xs:string" name="currency" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
   <xs:complexType name="articlesType">
     <xs:sequence>
       <xs:element name="articles_topic">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="1"/> <!-- Custom restriction -->
+            <xs:maxLength value="100"/> <!-- Custom restriction -->
             <xs:enumeration value="World News, Domestic, Politics"/>
             <xs:enumeration value="World News, Domestic, Politics, Health"/>
             <xs:enumeration value="World News, Domestic, Politics, Entertainment"/>
@@ -19,6 +28,8 @@
       <xs:element name="first_article_date">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="8"/> <!-- Custom restriction -->
+            <xs:maxLength value="10"/> <!-- Custom restriction -->
             <xs:enumeration value="29.4.2012"/>
             <xs:enumeration value="31.8.2017"/>
             <xs:enumeration value="29.12.2012"/>
@@ -33,6 +44,8 @@
       <xs:element name="latest_article_date">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="8"/> <!-- Custom restriction -->
+            <xs:maxLength value="10"/> <!-- Custom restriction -->
             <xs:enumeration value="20.8.2020"/>
             <xs:enumeration value="21.9.2020"/>
             <xs:enumeration value="20.1.2021"/>
@@ -46,7 +59,9 @@
       </xs:element>
       <xs:element name="num_articles">
         <xs:simpleType>
-          <xs:restriction base="xs:byte">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="999"/> <!-- Custom restriction -->
             <xs:enumeration value="17"/>
             <xs:enumeration value="27"/>
             <xs:enumeration value="32"/>
@@ -60,6 +75,8 @@
       <xs:element name="overall_article_rating">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="2"/> <!-- Custom restriction -->
+            <xs:maxLength value="3"/> <!-- Custom restriction -->
             <xs:enumeration value="93%"/>
             <xs:enumeration value="75%"/>
             <xs:enumeration value="68%"/>
@@ -73,7 +90,9 @@
       </xs:element>
       <xs:element name="avg_article_length_words">
         <xs:simpleType>
-          <xs:restriction base="xs:short">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="20000"/> <!-- Custom restriction -->
             <xs:enumeration value="1259"/>
             <xs:enumeration value="1849"/>
             <xs:enumeration value="1487"/>
@@ -87,10 +106,16 @@
       </xs:element>
     </xs:sequence>
   </xs:complexType>
+  <xs:complexType name="phone_numberType">
+    <xs:simpleContent>
+      <xs:extension base="xs:long">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
+  </xs:complexType>
   <xs:complexType name="phoneType">
     <xs:sequence>
-      <xs:element type="xs:long" name="personal_number"/>
-      <xs:element type="xs:long" name="office_number"/>
+      <xs:element type="phone_numberType" name="phone_number" maxOccurs="unbounded" minOccurs="0"/>
     </xs:sequence>
   </xs:complexType>
   <xs:complexType name="contactType">
@@ -100,6 +125,8 @@
       <xs:element name="linkedin">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="1"/> <!-- Custom restriction -->
+            <xs:maxLength value="100"/> <!-- Custom restriction -->
             <xs:enumeration value="https://www.linkedin.com/in/virgiltexas/"/>
             <xs:enumeration value="https://www.linkedin.com/in/petrkoval/"/>
             <xs:enumeration value="https://www.linkedin.com/in/williambomb/"/>
@@ -112,12 +139,21 @@
         </xs:simpleType>
       </xs:element>
     </xs:choice>
+    <xs:attribute type="xs:string" name="gdpr_opt_out" use="optional"/>
+  </xs:complexType>
+  <xs:complexType name="school_nameType">
+    <xs:simpleContent>
+      <xs:extension base="xs:string">
+        <xs:attribute type="xs:string" name="type" use="optional"/>
+      </xs:extension>
+    </xs:simpleContent>
   </xs:complexType>
   <xs:complexType name="educationType">
     <xs:sequence>
       <xs:element name="country">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Czech Republic"/>
             <xs:enumeration value="France"/>
             <xs:enumeration value="Germany"/>
@@ -129,6 +165,7 @@
       <xs:element name="city">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Prague"/>
             <xs:enumeration value="Marseille"/>
             <xs:enumeration value="Munich"/>
@@ -137,22 +174,11 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="school_name">
+      <xs:element type="school_nameType" name="school_name"/>
+      <xs:element name="education_reached">
         <xs:simpleType>
           <xs:restriction base="xs:string">
-            <xs:enumeration value="Czech University of Life Sciences"/>
-            <xs:enumeration value="Prague University of Economics and Business"/>
-            <xs:enumeration value="Aix-Marseille University"/>
-            <xs:enumeration value="Ludwig Maxmillian University of Munich"/>
-            <xs:enumeration value="Slovak University of Technology in Bratislava"/>
-            <xs:enumeration value="Czech Technical University in Prague"/>
-            <xs:enumeration value="Lomonosov Moscow State University"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
-      <xs:element name="education_reacher">
-        <xs:simpleType>
-          <xs:restriction base="xs:string">
+            <xs:pattern value="Masters|Bachelors"/> <!-- Custom restriction -->
             <xs:enumeration value="Masters"/>
             <xs:enumeration value="Bachelors"/>
           </xs:restriction>
@@ -161,6 +187,8 @@
       <xs:element name="graduated_on">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="8"/> <!-- Custom restriction -->
+            <xs:maxLength value="10"/> <!-- Custom restriction -->
             <xs:enumeration value="5.4.2000"/>
             <xs:enumeration value="4.5.1995"/>
             <xs:enumeration value="15.4.2010"/>
@@ -173,12 +201,14 @@
         </xs:simpleType>
       </xs:element>
     </xs:sequence>
+    <xs:attribute type="xs:string" name="type" use="optional"/>
   </xs:complexType>
   <xs:complexType name="direct_supervisorType">
     <xs:sequence>
       <xs:element name="name">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Alie"/>
             <xs:enumeration value="Petr"/>
             <xs:enumeration value="Anna"/>
@@ -193,6 +223,7 @@
       <xs:element name="surname">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Blue"/>
             <xs:enumeration value="Klic"/>
             <xs:enumeration value="Karenina"/>
@@ -207,6 +238,7 @@
       <xs:element name="gender">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="Male|Female"/> <!-- Custom restriction -->
             <xs:enumeration value="Female"/>
             <xs:enumeration value="Male"/>
           </xs:restriction>
@@ -214,7 +246,9 @@
       </xs:element>
       <xs:element name="age">
         <xs:simpleType>
-          <xs:restriction base="xs:byte">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="125"/> <!-- Custom restriction -->
             <xs:enumeration value="38"/>
             <xs:enumeration value="58"/>
             <xs:enumeration value="42"/>
@@ -228,12 +262,15 @@
       </xs:element>
       <xs:element type="contactType" name="contact"/>
     </xs:sequence>
+    <xs:attribute type="xs:byte" name="sid" use="optional"/>
+    <xs:attribute type="xs:string" name="lang" use="optional"/>
   </xs:complexType>
   <xs:complexType name="authorType">
     <xs:sequence>
       <xs:element name="name">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Virgil"/>
             <xs:enumeration value="Petr"/>
             <xs:enumeration value="William"/>
@@ -247,6 +284,7 @@
       <xs:element name="surname">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:pattern value="([a-zA-Z])*"/> <!-- Custom restriction -->
             <xs:enumeration value="Texas"/>
             <xs:enumeration value="Koval"/>
             <xs:enumeration value="Bomb"/>
@@ -261,7 +299,9 @@
       <xs:element type="xs:string" name="gender"/>
       <xs:element name="age">
         <xs:simpleType>
-          <xs:restriction base="xs:byte">
+          <xs:restriction base="xs:integer">
+            <xs:minInclusive value="0"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="125"/> <!-- Custom restriction -->
             <xs:enumeration value="39"/>
             <xs:enumeration value="45"/>
             <xs:enumeration value="29"/>
@@ -280,24 +320,13 @@
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
-      <xs:element name="salary_czk">
-        <xs:simpleType>
-          <xs:restriction base="xs:int">
-            <xs:enumeration value="25000"/>
-            <xs:enumeration value="27000"/>
-            <xs:enumeration value="22000"/>
-            <xs:enumeration value="15000"/>
-            <xs:enumeration value="29000"/>
-            <xs:enumeration value="31000"/>
-            <xs:enumeration value="17000"/>
-            <xs:enumeration value="33000"/>
-          </xs:restriction>
-        </xs:simpleType>
-      </xs:element>
+      <xs:element type="salaryType" name="salary"/>
       <xs:element type="articlesType" name="articles"/>
       <xs:element name="joined_company">
         <xs:simpleType>
           <xs:restriction base="xs:string">
+            <xs:minLength value="8"/> <!-- Custom restriction -->
+            <xs:maxLength value="10"/> <!-- Custom restriction -->
             <xs:enumeration value="24.4.2012"/>
             <xs:enumeration value="21.8.2016"/>
             <xs:enumeration value="28.1.2010"/>
@@ -314,6 +343,7 @@
       <xs:element type="direct_supervisorType" name="direct_supervisor"/>
     </xs:sequence>
     <xs:attribute type="xs:byte" name="id" use="optional"/>
+    <xs:attribute type="xs:string" name="lang" use="optional"/>
   </xs:complexType>
   <xs:complexType name="authorsType">
     <xs:sequence>

@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <authors>
-    <author id="1">
+    <author id="1" lang="en">
         <name>Virgil</name>
         <surname>Texas</surname>
         <gender>Male</gender>
         <age>39</age>
         <employee_type>Full time</employee_type>
-        <salary_czk>25000</salary_czk>
+        <salary currency="CZK">25000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics</articles_topic>
             <first_article_date>29.4.2012</first_article_date>
@@ -16,42 +16,42 @@
             <avg_article_length_words>1259</avg_article_length_words>
         </articles>
         <joined_company>24.4.2012</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>virgiltexas@gmail.com</email>
             <phone>
-                <personal_number>+420987654123</personal_number>
-                <office_number>+420220487642</office_number>
+                <phone_number type="personal">+420987654123</phone_number>
+                <phone_number type="office">+420220487642</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/virgiltexas/</linkedin>
         </contact>
-        <education>
+        <education type="full time">
             <country>Czech Republic</country>
             <city>Prague</city>
-            <school_name>Czech University of Life Sciences</school_name>
-            <education_reacher>Masters</education_reacher>
+            <school_name type="university">Czech University of Life Sciences</school_name>
+            <education_reached>Masters</education_reached>
             <graduated_on>5.4.2000</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="1" lang="en">
             <name>Alie</name>
             <surname>Blue</surname>
             <gender>Female</gender>
             <age>38</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420589652365</personal_number>
-                    <office_number>+420212547896</office_number>
+                    <phone_number type="personal">+420589652365</phone_number>
+                    <phone_number type="office">+420212547896</phone_number>
                 </phone>
                 <email>alieblue@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="2">
+    <author id="2" lang="en">
         <name>Petr</name>
         <surname>Koval</surname>
         <gender>Male</gender>
         <age>45</age>
         <employee_type>Part time</employee_type>
-        <salary_czk>27000</salary_czk>
+        <salary currency="CZK">27000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics</articles_topic>
             <first_article_date>31.8.2017</first_article_date>
@@ -61,42 +61,42 @@
             <avg_article_length_words>1849</avg_article_length_words>
         </articles>
         <joined_company>21.8.2016</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>petrkoval@gmail.com</email>
             <phone>
-                <personal_number>+420754459852</personal_number>
-                <office_number>+420220456962</office_number>
+                <phone_number type="personal">+420754459852</phone_number>
+                <phone_number type="office">+420220456962</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/petrkoval/</linkedin>
         </contact>
-        <education>
+        <education type="distance">
             <country>Czech Republic</country>
             <city>Prague</city>
-            <school_name>Prague University of Economics and Business</school_name>
-            <education_reacher>Bachelors</education_reacher>
+            <school_name type="university">Prague University of Economics and Business</school_name>
+            <education_reached>Bachelors</education_reached>
             <graduated_on>4.5.1995</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="2" lang="en">
             <name>Petr</name>
             <surname>Klic</surname>
             <gender>Male</gender>
             <age>58</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420578452365</personal_number>
-                    <office_number>+420226347896</office_number>
+                    <phone_number type="personal">+420578452365</phone_number>
+                    <phone_number type="office">+420226347896</phone_number>
                 </phone>
                 <email>petrklic@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="3">
+    <author id="3" lang="cz">
         <name>William</name>
         <surname>Bomb</surname>
         <gender>Male</gender>
         <age>29</age>
         <employee_type>Full time</employee_type>
-        <salary_czk>22000</salary_czk>
+        <salary currency="CZK">22000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Health</articles_topic>
             <first_article_date>29.12.2012</first_article_date>
@@ -106,42 +106,42 @@
             <avg_article_length_words>1487</avg_article_length_words>
         </articles>
         <joined_company>28.1.2010</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>williambomb@gmail.com</email>
             <phone>
-                <personal_number>+420755699852</personal_number>
-                <office_number>+420220453962</office_number>
+                <phone_number type="personal">+420755699852</phone_number>
+                <phone_number type="office">+420220453962</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/williambomb/</linkedin>
         </contact>
-        <education>
+        <education type="full time">
             <country>France</country>
             <city>Marseille</city>
-            <school_name>Aix-Marseille University</school_name>
-            <education_reacher>Bachelors</education_reacher>
+            <school_name type="university">Aix-Marseille University</school_name>
+            <education_reached>Bachelors</education_reached>
             <graduated_on>15.4.2010</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="3" lang="en">
             <name>Anna</name>
             <surname>Karenina</surname>
             <gender>Female</gender>
             <age>42</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420589458752</personal_number>
-                    <office_number>+420212369415</office_number>
+                    <phone_number type="personal">+420589458752</phone_number>
+                    <phone_number type="office">+420212369415</phone_number>
                 </phone>
                 <email>annakarenina@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="4">
+    <author id="4" lang="cz">
         <name>Jonathan</name>
         <surname>Brum</surname>
         <gender>Male</gender>
         <age>48</age>
         <employee_type>Part time</employee_type>
-        <salary_czk>15000</salary_czk>
+        <salary currency="CZK">15000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Entertainment</articles_topic>
             <first_article_date>12.7.2018</first_article_date>
@@ -151,42 +151,42 @@
             <avg_article_length_words>1001</avg_article_length_words>
         </articles>
         <joined_company>2.1.2018</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>jonathanbrum@gmail.com</email>
             <phone>
-                <personal_number>+420652699852</personal_number>
-                <office_number>+420220453981</office_number>
+                <phone_number type="personal">+420652699852</phone_number>
+                <phone_number type="office">+420220453981</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/jonathanbrum/</linkedin>
         </contact>
-        <education>
+        <education type="distance">
             <country>Germany</country>
             <city>Munich</city>
-            <school_name>Ludwig Maxmillian University of Munich</school_name>
-            <education_reacher>Masters</education_reacher>
+            <school_name type="university">Ludwig Maxmillian University of Munich</school_name>
+            <education_reached>Masters</education_reached>
             <graduated_on>5.4.1998</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="4" lang="en">
             <name>Kara</name>
             <surname>Mara</surname>
             <gender>Female</gender>
             <age>61</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420589458715</personal_number>
-                    <office_number>+420569235896</office_number>
+                    <phone_number type="personal">+420589458715</phone_number>
+                    <phone_number type="office">+420569235896</phone_number>
                 </phone>
                 <email>karamara@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="5">
+    <author id="5" lang="en">
         <name>Derek</name>
         <surname>Killjoy</surname>
         <gender>Male</gender>
         <age>22</age>
         <employee_type>Full time</employee_type>
-        <salary_czk>29000</salary_czk>
+        <salary currency="CZK">29000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Religion, Science, Health</articles_topic>
             <first_article_date>29.9.2010</first_article_date>
@@ -196,42 +196,42 @@
             <avg_article_length_words>954</avg_article_length_words>
         </articles>
         <joined_company>1.2.2009</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>derekkilljoy@gmail.com</email>
             <phone>
-                <personal_number>+420254699852</personal_number>
-                <office_number>+420226953981</office_number>
+                <phone_number type="personal">+420254699852</phone_number>
+                <phone_number type="office">+420226953981</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/derekkilljoy/</linkedin>
         </contact>
-        <education>
+        <education type="distance">
             <country>Slovakia</country>
             <city>Bratislava</city>
-            <school_name>Slovak University of Technology in Bratislava</school_name>
-            <education_reacher>Masters</education_reacher>
+            <school_name type="university">Slovak University of Technology in Bratislava</school_name>
+            <education_reached>Masters</education_reached>
             <graduated_on>4.3.2018</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="5" lang="cz">
             <name>Jon</name>
             <surname>Doe</surname>
             <gender>Male</gender>
             <age>68</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420523698756</personal_number>
-                    <office_number>+420156852349</office_number>
+                    <phone_number type="personal">+420523698756</phone_number>
+                    <phone_number type="office">+420156852349</phone_number>
                 </phone>
                 <email>jondoe@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="6">
+    <author id="6" lang="cz">
         <name>Alan</name>
         <surname>Cash</surname>
         <gender>Male</gender>
         <age>33</age>
         <employee_type>Full time</employee_type>
-        <salary_czk>31000</salary_czk>
+        <salary currency="CZK">31000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Business</articles_topic>
             <first_article_date>6.4.2018</first_article_date>
@@ -241,42 +241,42 @@
             <avg_article_length_words>822</avg_article_length_words>
         </articles>
         <joined_company>4.6.2017</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>alancash@gmail.com</email>
             <phone>
-                <personal_number>+420254647852</personal_number>
-                <office_number>+420226952561</office_number>
+                <phone_number type="personal">+420254647852</phone_number>
+                <phone_number type="office">+420226952561</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/alancash/</linkedin>
         </contact>
-        <education>
+        <education type="distance">
             <country>Czech Republic</country>
             <city>Prague</city>
-            <school_name>Czech Technical University in Prague</school_name>
-            <education_reacher>Masters</education_reacher>
+            <school_name type="university">Czech Technical University in Prague</school_name>
+            <education_reached>Masters</education_reached>
             <graduated_on>5.6.2011</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="6" lang="cz">
             <name>Johnny</name>
             <surname>Zhivago</surname>
             <gender>Male</gender>
             <age>25</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420585896465</personal_number>
-                    <office_number>+420212512594</office_number>
+                    <phone_number type="personal">+420585896465</phone_number>
+                    <phone_number type="office">+420212512594</phone_number>
                 </phone>
                 <email>johnnyzhivago@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="7">
+    <author id="7" lang="ru">
         <name>Artur</name>
         <surname>Korneyev</surname>
         <gender>Male</gender>
         <age>65</age>
         <employee_type>Part time</employee_type>
-        <salary_czk>17000</salary_czk>
+        <salary currency="CZK">17000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Science, Health</articles_topic>
             <first_article_date>19.8.2011</first_article_date>
@@ -286,42 +286,42 @@
             <avg_article_length_words>595</avg_article_length_words>
         </articles>
         <joined_company>11.6.2010</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>arturkorneyev@gmail.com</email>
             <phone>
-                <personal_number>+420254517852</personal_number>
-                <office_number>+420226985161</office_number>
+                <phone_number type="personal">+420254517852</phone_number>
+                <phone_number type="office">+420226985161</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/arturkorneyev/</linkedin>
         </contact>
-        <education>
+        <education type="distance">
             <country>Russian Federation</country>
             <city>Moscow</city>
-            <school_name>Lomonosov Moscow State University</school_name>
-            <education_reacher>Masters</education_reacher>
+            <school_name type="university">Lomonosov Moscow State University</school_name>
+            <education_reached>Masters</education_reached>
             <graduated_on>2.1.1980</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="7" lang="cz">
             <name>Amelia</name>
             <surname>Watson</surname>
             <gender>Female</gender>
             <age>26</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420745896523</personal_number>
-                    <office_number>+420215365892</office_number>
+                    <phone_number type="personal">+420745896523</phone_number>
+                    <phone_number type="office">+420215365892</phone_number>
                 </phone>
                 <email>ameliawatson@gmail.com</email>
             </contact>
         </direct_supervisor>
     </author>
-    <author id="8">
+    <author id="8" lang="en">
         <name>Petr</name>
         <surname>Bramburek</surname>
         <gender>Male</gender>
         <age>39</age>
         <employee_type>Full time</employee_type>
-        <salary_czk>33000</salary_czk>
+        <salary currency="CZK">33000</salary>
         <articles>
             <articles_topic>World News, Domestic, Entertainment</articles_topic>
             <first_article_date>29.12.2015</first_article_date>
@@ -331,30 +331,30 @@
             <avg_article_length_words>2248</avg_article_length_words>
         </articles>
         <joined_company>11.12.2013</joined_company>
-        <contact>
+        <contact gdpr_opt_out="no">
             <email>petrbramburek@gmail.com</email>
             <phone>
-                <personal_number>+420569521456</personal_number>
-                <office_number>+420226915961</office_number>
+                <phone_number type="personal">+420569521456</phone_number>
+                <phone_number type="office">+420226915961</phone_number>
             </phone>
             <linkedin>https://www.linkedin.com/in/petrbramburek/</linkedin>
         </contact>
-        <education>
+        <education type="full time">
             <country>Czech Republic</country>
             <city>Prague</city>
-            <school_name>Czech University of Life Sciences</school_name>
-            <education_reacher>Bachelors</education_reacher>
+            <school_name type="university">Czech University of Life Sciences</school_name>
+            <education_reached>Bachelors</education_reached>
             <graduated_on>15.8.1999</graduated_on>
         </education>
-        <direct_supervisor>
+        <direct_supervisor sid="8" lang="en">
             <name>Glue</name>
             <surname>Lue</surname>
             <gender>Female</gender>
             <age>45</age>
-            <contact>
+            <contact gdpr_opt_out="no">
                 <phone>
-                    <personal_number>+420548965364</personal_number>
-                    <office_number>+420155896526</office_number>
+                    <phone_number type="personal">+420548965364</phone_number>
+                    <phone_number type="office">+420155896526</phone_number>
                 </phone>
                 <email>gluelue@gmail.com</email>
             </contact>
