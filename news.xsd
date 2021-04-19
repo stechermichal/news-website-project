@@ -20,17 +20,19 @@
       </xs:element>
       <xs:element name="first_article_date">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:minLength value="8"/> <!-- Custom restriction -->
-            <xs:maxLength value="10"/> <!-- Custom restriction -->
+          <xs:restriction base="xs:date">
+            <xs:minInclusive value="1920-01-01"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="2040-12-31"/> <!-- Custom restriction -->
+            <xs:pattern value=".{10}"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>
       <xs:element name="latest_article_date">
         <xs:simpleType>
-          <xs:restriction base="xs:string">
-            <xs:minLength value="8"/> <!-- Custom restriction -->
-            <xs:maxLength value="10"/> <!-- Custom restriction -->
+          <xs:restriction base="xs:date">
+            <xs:minInclusive value="1920-01-01"/> <!-- Custom restriction -->
+            <xs:maxInclusive value="2040-12-31"/> <!-- Custom restriction -->
+            <xs:pattern value=".{10}"/>
           </xs:restriction>
         </xs:simpleType>
       </xs:element>

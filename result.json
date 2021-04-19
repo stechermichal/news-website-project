@@ -1,0 +1,117 @@
+
+        {
+        "Authors": [
+        
+            {
+            
+            "Name": "William",
+            "Surname": "Bomb",
+            "Gender": "Male",
+            "Age": 29,
+            "Employee type": "Full time",
+            "Salary": 22000
+            },
+            {
+            
+            "Name": "Petr",
+            "Surname": "Bramburek",
+            "Gender": "Male",
+            "Age": 39,
+            "Employee type": "Full time",
+            "Salary": 33000
+            },
+            {
+            
+            "Name": "Jonathan",
+            "Surname": "Brum",
+            "Gender": "Male",
+            "Age": 48,
+            "Employee type": "Part time",
+            "Salary": 15000
+            },
+            {
+            
+            "Name": "Alan",
+            "Surname": "Cash",
+            "Gender": "Male",
+            "Age": 33,
+            "Employee type": "Full time",
+            "Salary": 31000
+            },
+            {
+            
+            "Name": "Derek",
+            "Surname": "Killjoy",
+            "Gender": "Male",
+            "Age": 22,
+            "Employee type": "Full time",
+            "Salary": 29000
+            },
+            {
+            
+            "Name": "Artur",
+            "Surname": "Korneyev",
+            "Gender": "Male",
+            "Age": 65,
+            "Employee type": "Part time",
+            "Salary": 17000
+            },
+            {
+            
+            "Name": "Petr",
+            "Surname": "Koval",
+            "Gender": "Male",
+            "Age": 45,
+            "Employee type": "Part time",
+            "Salary": 27000
+            },
+            {
+            
+            "Name": "Virgil",
+            "Surname": "Texas",
+            "Gender": "Male",
+            "Age": 39,
+            "Employee type": "Full time",
+            "Salary": 25000
+            }
+        ],
+        "Info about long articles": [
+        
+            {
+            "Average article length": 1259,
+            "Articles  usually in": "World News, Domestic, Politics",
+            "Overall article rating": "93%",
+            "Number of articles": 17,
+            "Data pool": "Insufficient"
+            },
+            {
+            "Average article length": 1849,
+            "Articles  usually in": "World News, Domestic, Politics",
+            "Overall article rating": "75%",
+            "Number of articles": 27,
+            "Data pool": "Sufficient"
+            },
+            {
+            "Average article length": 1487,
+            "Articles  usually in": "World News, Domestic, Politics, Health",
+            "Overall article rating": "68%",
+            "Number of articles": 32,
+            "Data pool": "Sufficient"
+            },
+            {
+            "Average article length": 1001,
+            "Articles  usually in": "World News, Domestic, Politics, Entertainment",
+            "Overall article rating": "80%",
+            "Number of articles": 8,
+            "Data pool": "Insufficient"
+            },
+            {
+            "Average article length": 2248,
+            "Articles  usually in": "World News, Domestic, Entertainment",
+            "Overall article rating": "49%",
+            "Number of articles": 29,
+            "Data pool": "Sufficient"
+            }
+        ]
+    }
+    

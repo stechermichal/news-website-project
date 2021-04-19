@@ -10,8 +10,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">25000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics</articles_topic>
-            <first_article_date>29.4.2012</first_article_date>
-            <latest_article_date>20.8.2020</latest_article_date>
+            <first_article_date>2012-04-29</first_article_date>
+            <latest_article_date>2020-08-20</latest_article_date>
             <num_articles>17</num_articles>
             <overall_article_rating>93%</overall_article_rating>
             <avg_article_length_words>1259</avg_article_length_words>
@@ -55,8 +55,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">27000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics</articles_topic>
-            <first_article_date>31.8.2017</first_article_date>
-            <latest_article_date>21.9.2020</latest_article_date>
+            <first_article_date>2017-08-31</first_article_date>
+            <latest_article_date>2020-09-21</latest_article_date>
             <num_articles>27</num_articles>
             <overall_article_rating>75%</overall_article_rating>
             <avg_article_length_words>1849</avg_article_length_words>
@@ -100,8 +100,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">22000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Health</articles_topic>
-            <first_article_date>29.12.2012</first_article_date>
-            <latest_article_date>20.1.2021</latest_article_date>
+            <first_article_date>2012-12-29</first_article_date>
+            <latest_article_date>2021-01-20</latest_article_date>
             <num_articles>32</num_articles>
             <overall_article_rating>68%</overall_article_rating>
             <avg_article_length_words>1487</avg_article_length_words>
@@ -145,8 +145,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">15000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Entertainment</articles_topic>
-            <first_article_date>12.7.2018</first_article_date>
-            <latest_article_date>24.12.2020</latest_article_date>
+            <first_article_date>2018-07-12</first_article_date>
+            <latest_article_date>2020-12-24</latest_article_date>
             <num_articles>8</num_articles>
             <overall_article_rating>80%</overall_article_rating>
             <avg_article_length_words>1001</avg_article_length_words>
@@ -190,8 +190,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">29000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Religion, Science, Health</articles_topic>
-            <first_article_date>29.9.2010</first_article_date>
-            <latest_article_date>1.4.2021</latest_article_date>
+            <first_article_date>2010-09-29</first_article_date>
+            <latest_article_date>2021-04-01</latest_article_date>
             <num_articles>53</num_articles>
             <overall_article_rating>71%</overall_article_rating>
             <avg_article_length_words>954</avg_article_length_words>
@@ -235,8 +235,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">31000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Business</articles_topic>
-            <first_article_date>6.4.2018</first_article_date>
-            <latest_article_date>15.1.2021</latest_article_date>
+            <first_article_date>2018-04-06</first_article_date>
+            <latest_article_date>2021-01-15</latest_article_date>
             <num_articles>17</num_articles>
             <overall_article_rating>59%</overall_article_rating>
             <avg_article_length_words>822</avg_article_length_words>
@@ -280,8 +280,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">17000</salary>
         <articles>
             <articles_topic>World News, Domestic, Politics, Science, Health</articles_topic>
-            <first_article_date>19.8.2011</first_article_date>
-            <latest_article_date>11.1.2021</latest_article_date>
+            <first_article_date>2011-08-19</first_article_date>
+            <latest_article_date>2021-01-11</latest_article_date>
             <num_articles>82</num_articles>
             <overall_article_rating>73%</overall_article_rating>
             <avg_article_length_words>595</avg_article_length_words>
@@ -325,8 +325,8 @@ xsi:noNamespaceSchemaLocation="news.xsd">
         <salary currency="CZK">33000</salary>
         <articles>
             <articles_topic>World News, Domestic, Entertainment</articles_topic>
-            <first_article_date>29.12.2015</first_article_date>
-            <latest_article_date>24.5.2020</latest_article_date>
+            <first_article_date>2015-12-29</first_article_date>
+            <latest_article_date>2020-05-24</latest_article_date>
             <num_articles>29</num_articles>
             <overall_article_rating>49%</overall_article_rating>
             <avg_article_length_words>2248</avg_article_length_words>
